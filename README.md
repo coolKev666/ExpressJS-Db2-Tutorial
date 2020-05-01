@@ -1,5 +1,5 @@
 ## ExpressJS-Db2-Tutorial
-This tutorial demonstrates how to setup express JS backend to communicate with Db2 database.
+This lightweight tutorial demonstrates how to setup express JS API endpoints to communicate with Db2 database.
 Additional tutorials on Db2 LUW installation are coming up soon. 
 
 
