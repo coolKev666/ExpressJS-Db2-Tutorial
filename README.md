@@ -114,6 +114,7 @@ If port already in use, you may use `netstat -an` to check available ports.
 ### 7. Testing API function. 
 Simplest way to verify endpoint function is working is to enter it as a browser url. 
 In this case, open your browser and type `localhost:8000/api/selectData` to call the endpoint function. 
+Data should show up in browser window if successful.
 
 
 
