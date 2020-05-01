@@ -108,6 +108,7 @@ app.listen(API_PORT, 'localhost', () => console.log(`LISTENING ON PORT ${API_POR
 ### 6. Start the app and test the function. 
 Run `node index.js` to start. Verify it is listening on specified available port (see image below). 
 If port already in use, you may use `netstat -an` to check available ports.
+
 ![Image](https://github.com/coolKev666/ExpressJS-Db2-Tutorial/blob/master/Images/Step%205.PNG)
 
 ### 7. Testing API function. 
