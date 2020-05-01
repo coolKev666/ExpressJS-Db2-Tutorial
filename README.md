@@ -47,6 +47,9 @@ npm i express cors ibm_db
 
 
 ## 5. Copy and paste the following sample code into index.js
+
+After copying, remember to change the parameters (API_PORT, cn_str, etc.) to specified values. 
+
 ``` Javascript
 
 // ------------------------------------------------------------------
