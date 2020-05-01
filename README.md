@@ -16,7 +16,7 @@ npm init
 ```
 Hit enter until you arrive at the last step - type *yes* to confirm.
 
-![Image description](link)
+![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%201.PNG)
 
 
 ### 3. Create and run .js file
@@ -24,11 +24,11 @@ Create a file called `index.js` in the root directory with `package.json`.
 ```
 touch index.js
 ```
-![Image description](link)
+![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%202.PNG)
 
 Next open your text editor and type `console.log("Hello world")`
 Save the file, go to terminal, and run `node index.js` to ensure app is working.
-![Image description](link)
+![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%203.PNG)
 
 
 ### 4. Install dependencies under root directory 
@@ -38,7 +38,7 @@ ibm_db - IBM Db2 Driver.
 ```
 npm i express cors ibm_db
 ```
-![Image description](link)
+![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%204.PNG)
 
 
 ### 5. Copy and paste the following sample code into index.js
@@ -107,7 +107,7 @@ app.listen(API_PORT, 'localhost', () => console.log(`LISTENING ON PORT ${API_POR
 ### 6. Start the app and test the function. 
 Run `node index.js` to start. Verify it is listening on specified available port (see image below). 
 If port already in use, you may use `netstat -an` to check available ports.
-![Image description](link)
+![Image](https://github.com/coolKev666/ExpressJS-Db2-Tutorial/blob/master/Images/Step%205.PNG)
 
 ### 7. Testing API function. 
 Simplest way to verify function is working is to enter it in the url. 
