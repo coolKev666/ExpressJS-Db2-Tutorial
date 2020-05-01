@@ -1,4 +1,3 @@
-
 // ------------------------------------------------------------------
 // --------------------- Libraries + Variables ----------------------
 // ------------------------------------------------------------------
@@ -26,10 +25,8 @@ var ibmdb = require('ibm_db');
 // ------------------------------------------------------------------
 // Example Select Function
 router.get('/selectData', (req, res) => {
-    
-    cn = cn_str
 
-    ibmdb.open(cn, function (err, db) {
+    ibmdb.open(cn_str, function (err, db) {
 
         if (err) return console.log(err);
         var sql = `select * from <your_db_name>`;
@@ -56,11 +53,3 @@ router.get('/selectData', (req, res) => {
 
 app.use('/api', router);
 app.listen(API_PORT, 'localhost', () => console.log(`LISTENING ON PORT ${API_PORT}`));
-
-
-/*
-Note - to test the API function "selectData", 
-
-open browser and run localhost:8000/api/selectData
-
-*/
