@@ -46,8 +46,8 @@ npm i express cors ibm_db
 ![Image](./Images/Step%204.PNG)
 
 
-## 5. Copy and paste the following sample code into index.js
-
+## 5. Setup REST API endpoints
+Copy and paste the following sample code into index.js
 After copying, remember to change the parameters (API_PORT, cn_str, etc.) to specified values. 
 
 ``` Javascript
