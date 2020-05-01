@@ -1,15 +1,15 @@
-## ExpressJS-Db2-Tutorial
+# ExpressJS-Db2-Tutorial
 This lightweight tutorial demonstrates how to setup express JS API endpoints to communicate with Db2 database.
 Additional tutorials on Db2 LUW installation are coming up soon. 
 
 
-### 1. Prerequisites 
+## 1. Prerequisites 
 - Install the latest stable version of node via: https://nodejs.org/en/download/
 - Install Db2 community edition: https://www.ibm.com/products/db2-database/developers
 
 
 
-### 2. Create new node project
+## 2. Create new node project
 ```
 mkdir Test
 cd Test
@@ -20,7 +20,7 @@ Hit enter until you arrive at the last step - type *yes* to confirm.
 ![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%201.PNG)
 
 
-### 3. Create and run .js file
+## 3. Create and run .js file
 Create a file called `index.js` in the root directory with `package.json`.
 ```
 touch index.js
@@ -33,7 +33,7 @@ Save the file, go to terminal, and run `node index.js` to ensure app is working.
 ![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%203.PNG)
 
 
-### 4. Install dependencies under root directory 
+## 4. Install dependencies under root directory 
 Express - Lightweight node.js framework for web application/APIs. 
 CORS - "Cross Origin Resource Sharing" - Express middleware for handling http requests. 
 ibm_db - IBM Db2 Driver.
@@ -43,7 +43,7 @@ npm i express cors ibm_db
 ![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%204.PNG)
 
 
-### 5. Copy and paste the following sample code into index.js
+## 5. Copy and paste the following sample code into index.js
 ``` Javascript
 
 // ------------------------------------------------------------------
@@ -106,13 +106,13 @@ app.listen(API_PORT, 'localhost', () => console.log(`LISTENING ON PORT ${API_POR
 
 ```
 
-### 6. Start the app and test the function. 
+## 6. Start the app and test the function. 
 Run `node index.js` to start. Verify it is listening on specified available port (see image below). 
 If port already in use, you may use `netstat -an` to check available ports.
 
 ![Image](https://github.com/coolKev666/ExpressJS-Db2-Tutorial/blob/master/Images/Step%205.PNG)
 
-### 7. Testing API function. 
+## 7. Testing API function. 
 Simplest way to verify endpoint function is working is to enter it as a browser url. 
 In this case, open your browser and type `localhost:8000/api/selectData` to call the endpoint function. 
 Data should show up in browser window if successful.
