@@ -112,7 +112,7 @@ If port already in use, you may use `netstat -an` to check available ports.
 ![Image](https://github.com/coolKev666/ExpressJS-Db2-Tutorial/blob/master/Images/Step%205.PNG)
 
 ### 7. Testing API function. 
-Simplest way to verify function is working is to enter it in the url. 
+Simplest way to verify endpoint function is working is to enter it as a browser url. 
 In this case, open your browser and type `localhost:8000/api/selectData` to call the endpoint function. 
 
 
