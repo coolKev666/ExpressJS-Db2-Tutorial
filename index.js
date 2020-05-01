@@ -10,12 +10,15 @@ var app = express();
 const router = express.Router();
 const API_PORT = 8000;
 
-// 3. cors - Express middleware for handling http requests (from frontend mainly)
+// 3. cors - Express middleware for handling http requests
 var cors = require('cors');
 app.use(cors());
 
 // 4. cn_str - connection string to establish communication with target DB
 cn_str = "DRIVER={DB2};DATABASE=<db_name>;HOSTNAME=<host_address>;UID=<user_id>;PWD=<password>;PORT=<PORT_NO>;PROTOCOL=TCPIP";
+
+// 5. ibm_db - Db2 driver
+var ibmdb = require('ibm_db');
 
 
 // ------------------------------------------------------------------
@@ -23,7 +26,7 @@ cn_str = "DRIVER={DB2};DATABASE=<db_name>;HOSTNAME=<host_address>;UID=<user_id>;
 // ------------------------------------------------------------------
 // Example Select Function
 router.get('/selectData', (req, res) => {
-    var ibmdb = require('ibm_db');
+    
     cn = cn_str
 
     ibmdb.open(cn, function (err, db) {
