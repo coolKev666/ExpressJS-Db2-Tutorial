@@ -123,7 +123,8 @@ Simplest way to verify endpoint function is working is to enter it as a browser 
 In this case, open your browser and type `localhost:8000/api/selectData` to call the endpoint function. 
 Data should show up in browser window if successful.
 
-
+![Image](https://github.com/coolKev666/ExpressJS-Db2-Tutorial/blob/master/Images/Step%206.PNG)
+![Image](https://github.com/coolKev666/ExpressJS-Db2-Tutorial/blob/master/Images/Step%207.PNG)
 
 
 
