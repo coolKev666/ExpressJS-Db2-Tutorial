@@ -34,9 +34,12 @@ Save the file, go to terminal, and run `node index.js` to ensure app is working.
 
 
 ## 4. Install dependencies under root directory 
-Express - Lightweight node.js framework for web application/APIs. 
-CORS - "Cross Origin Resource Sharing" - Express middleware for handling http requests. 
-ibm_db - IBM Db2 Driver.
+Let us install the following dependencies: <br/>
+Express - Lightweight node.js framework for web application/APIs. <br/>
+CORS - "Cross Origin Resource Sharing" - Express middleware for handling http requests. <br/>
+ibm_db - IBM Db2 Driver. <br/>
+
+Note: If the installation fails - delete `node_modules` folder under root directory and start again.
 ```
 npm i express cors ibm_db
 ```
