@@ -77,25 +77,32 @@ var ibmdb = require('ibm_db');
 // ------------------------------------------------------------------
 // --------------------------- Functions ----------------------------
 // ------------------------------------------------------------------
-// Example Select Function
+// Example Select Function 
 router.get('/selectData', (req, res) => {
     
     cn = cn_str
 
     ibmdb.open(cn, function (err, db) {
 
-        if (err) return console.log(err);
-        var sql = `select * from <your_db_name>`;
+        // Throws exception on connection failure
+        if (err) return console.log(err); 
+        var sql = `select * from <your_db_name>`; // Replace with desired query
 
+        // Query Db2
         db.query(sql, function (err, data) {
+        
+            // Throws exception on query failure, else print success msg
             if (err) console.log(err);
             else {
                 console.log("data fetch success");
             }
+            
+            // Close connection to release application lock
             db.close(function () {
                 console.log('done');
             });
-
+            
+            // Return data to caller
             return res.json(data);
         });
     });
