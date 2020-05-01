@@ -28,6 +28,7 @@ touch index.js
 
 Next open your text editor and type `console.log("Hello world")`
 Save the file, go to terminal, and run `node index.js` to ensure app is working.
+
 ![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%203.PNG)
 
 
