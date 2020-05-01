@@ -1,14 +1,15 @@
-## ExpressJS-Db2-Tutorial
-This tutorial demonstrates how to setup express JS backend to communicate with Db2 database.
-Another tutorial on Db2 LUW installation is coming up soon. 
-Any feedback is appreciated, thanks.
+# ExpressJS-Db2-Tutorial
+This lightweight tutorial demonstrates how to setup express JS API endpoints to communicate with Db2 database.
+Additional tutorials on Db2 LUW installation are coming up soon. 
 
 
-### 1. Prerequisites 
-Install the latest stable version of node via: https://nodejs.org/en/download/
+## 1. Prerequisites 
+- Install the latest stable version of node via: https://nodejs.org/en/download/
+- Install Db2 community edition: https://www.ibm.com/products/db2-database/developers
 
 
-### 2. Create new node project
+
+## 2. Create new node project
 ```
 mkdir Test
 cd Test
@@ -16,32 +17,39 @@ npm init
 ```
 Hit enter until you arrive at the last step - type *yes* to confirm.
 
-![Image description](link)
+![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%201.PNG)
 
 
-### 3. Create and run .js file
+## 3. Create and run .js file
 Create a file called `index.js` in the root directory with `package.json`.
 ```
 touch index.js
 ```
-![Image description](link)
+![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%202.PNG)
 
 Next open your text editor and type `console.log("Hello world")`
 Save the file, go to terminal, and run `node index.js` to ensure app is working.
-![Image description](link)
+
+![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%203.PNG)
 
 
-### 4. Install dependencies under root directory 
-Express - Lightweight node.js framework for web application/APIs. 
-CORS - "Cross Origin Resource Sharing" - Express middleware for handling http requests. 
-ibm_db - IBM Db2 Driver.
+## 4. Install dependencies under root directory 
+Let us install the following dependencies: <br/>
+Express - Lightweight node.js framework for web application/APIs. <br/>
+CORS - "Cross Origin Resource Sharing" - Express middleware for handling http requests. <br/>
+ibm_db - IBM Db2 Driver. <br/>
+
+Note: If the installation fails - delete `node_modules` folder under root directory and start again.
 ```
 npm i express cors ibm_db
 ```
-![Image description](link)
+![Image](https://raw.githubusercontent.com/coolKev666/ExpressJS-Db2-Tutorial/master/Images/Step%204.PNG)
 
 
-### 5. Copy and paste the following sample code into index.js
+## 5. Copy and paste the following sample code into index.js
+
+After copying, remember to change the parameters (API_PORT, cn_str, etc.) to specified values. 
+
 ``` Javascript
 
 // ------------------------------------------------------------------
@@ -104,14 +112,16 @@ app.listen(API_PORT, 'localhost', () => console.log(`LISTENING ON PORT ${API_POR
 
 ```
 
-### 6. Start the app and test the function. 
+## 6. Start the app and test the function. 
 Run `node index.js` to start. Verify it is listening on specified available port (see image below). 
 If port already in use, you may use `netstat -an` to check available ports.
-![Image description](link)
 
-### 7. Testing API function. 
-Simplest way to verify function is working is to enter it in the url. 
+![Image](https://github.com/coolKev666/ExpressJS-Db2-Tutorial/blob/master/Images/Step%205.PNG)
+
+## 7. Testing API function. 
+Simplest way to verify endpoint function is working is to enter it as a browser url. 
 In this case, open your browser and type `localhost:8000/api/selectData` to call the endpoint function. 
+Data should show up in browser window if successful.
 
 
 
