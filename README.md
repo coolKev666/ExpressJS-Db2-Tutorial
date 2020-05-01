@@ -4,7 +4,9 @@ Additional tutorials on Db2 LUW installation are coming up soon.
 
 
 ### 1. Prerequisites 
-Install the latest stable version of node via: https://nodejs.org/en/download/
+- Install the latest stable version of node via: https://nodejs.org/en/download/
+- Install Db2 community edition: https://www.ibm.com/products/db2-database/developers
+
 
 
 ### 2. Create new node project
